@@ -12,7 +12,7 @@ The Input Directory
 -------------------
 A connector in Chiminey system specifes a 'Input Location' through 'Create Job' tab of the Chimney-Portal. Files located in the 'Input Location' directory is loaded to each VM for cloud execution. The content of 'Input Location' may vary for different runs. Chiminey allows parameteisation of the input envrionment. Any file with '_template' suffix located in the input directory is regarded as template file. Chiminey internally replaces values of the template tags based on the 'payload parameter sweep' provied as Json Dictionary from 'Create Job' tab in the Chiminey portal.
 
-The input directory is provided with a template file 'run.sh_template' which is availabe in 'input_greatspn' directory of GREATSPN SC install. All the template tags specified in  the run.sh_template file will be internally replaced by Chiminey with corresponding values that are passed in from 'Chiminey Portal' as Json dictionary. The 'run.sh_template' is  also renamed to 'run.sh' with all template tags replaced with corresponding values.
+The input directory is provided with a template file 'run.sh_template' which is availabe in 'input_greatspn' directory of GreatSPN SC install. All the template tags specified in  the run.sh_template file will be internally replaced by Chiminey with corresponding values that are passed in from 'Chiminey Portal' as Json dictionary. The 'run.sh_template' is  also renamed to 'run.sh' with all template tags replaced with corresponding values.
 
 For example let us assume following shell commands are used to execute a GreatSPN model cycpoll.net and ranpoll1.net
 
@@ -23,7 +23,7 @@ $ disab_lp ranpoll1
 $ pinvar ranpoll1
 ```
 
-Output files for the target GreatSPN model are created in the same directory where model file is located. To execute these greatSPN .net models over the Greapt-SPN modules from the Chimiley portal, an appropiate JSON dictionary need to be passed in. 
+Output files for the target GreatSPN model are created in the same directory where model file is located. To execute these greatSPN .net models over the GreatSPN modules from the Chimiley portal, an appropiate JSON dictionary need to be passed in. 
 
 The JSON dictionary has to be passed in from 'Payload parameter sweep' field from Chiminey-Portal's 'Create Job' tab. Following ia an example JSON dictionary to execute above command through this Smart Connector 
 

@@ -1,0 +1,16 @@
+#!/bin/sh
+
+INPUT_DIR=$1
+OUTPUT_DIR=$2
+GREATSPN_BIN=$3
+
+
+cd $INPUT_DIR
+
+$GREATSPN_BIN/{{greatspn_module_name}} {{model_name}} &> runlog.txt
+
+
+cp ./*.txt ../$OUTPUT_DIR
+cp ./{{model_name}}.* ../$OUTPUT_DIR
+
+# --- EOF ---

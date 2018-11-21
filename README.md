@@ -22,6 +22,7 @@ $ pinvar cycpoll
 $ disab_lp ranpoll1
 $ pinvar ranpoll1
 ```
+
 Output files for the target GreatSPN model are created in the same directory where model file is located. To execute these greatSPN .net models over the Greapt-SPN modules from the Chimiley portal, an appropiate JSON dictionary need to be passed in. 
 
 The JSON dictionary has to be passed in from 'Payload parameter sweep' field from Chiminey-Portal's 'Create Job' tab. Following ia an example JSON dictionary to execute above command through this Smart Connector 
@@ -30,7 +31,8 @@ The JSON dictionary has to be passed in from 'Payload parameter sweep' field fro
 { "greatspn_module_name" :  [ "pinvar", "disab_lp" ], "model_name" :  [ "ranpoll1", "cycpoll" ] }
 
 ```
-Note that the {{greatspn_module_names}} and {{model_names}} are the tag name defined in the 'run.sh_template'. These template tags are replaced by appropiate value passed in through JSON dictionary.
+
+Note that the {{greatspn_module_name}} and {{model_name}} are the tag name defined in the 'run.sh_template'. These template tags are replaced by appropiate value passed in through JSON dictionary.
 
 
 Configure, Create and Execute a GreatSPN Job

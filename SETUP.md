@@ -32,7 +32,7 @@ Setup
 ```
 	$ git clone https://github.com/alahmedabdullah/greatspnconnector.git
 ```
-8. Change ownership of the newly created uppalconnector directory
+8. Change ownership of the newly created greatspnconnector directory
 ```
 	$ chown -R chiminey.nginx greatspnconnector
 ```
